@@ -1,0 +1,20 @@
+---
+#GET HELP
+	-man <command_name>
+	-or info <command_name>
+#USER & GROUP
+	- List all file : ls -a
+	- Add new user : sudo useradd <username>
+	- Add/modify password : sudo passwd <username> 
+	- Alternate to user add : sudo useraddd
+	- Add new user group : sudo usergroup <group_name>
+	- Add user to usergroup : sudo usermod -a -G <group_name> <user_name>
+	- Remove an user: sudo userdel <user_name>
+	- Remove an usergroup : sudo groupdel <group_name>
+#FILE PERMISSIONS
+	- Change ownership: sudo chown <group_name>:<user> <file_name>
+	- Make file executable : sudo chmod +x <file_name>
+	- File permissions format : user group others
+	- File permission byte: R4 W2 X1. So 7 means rwx, 6 is rw-   
+
+

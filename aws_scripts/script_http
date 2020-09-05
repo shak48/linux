@@ -1,0 +1,6 @@
+#!/bin/bash
+yum update -y
+yum install -y httpd.x86_64
+systemctl start service.httpd.service
+systemctl enble service.httpd.service
+echo "Hellow from $(hostname -f)" >var/www/html/index.html
